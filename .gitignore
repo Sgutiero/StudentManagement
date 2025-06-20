@@ -31,8 +31,6 @@ ScaffoldingReadMe.txt
 .vscode/
 
 # Others
-*.db
-*.sqlite
 *.bak
 *.orig
 *.swp
