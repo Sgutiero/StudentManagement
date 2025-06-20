@@ -1,0 +1,64 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# DotCover
+.idea/
+.vs/
+
+# Rider
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# Others
+*.db
+*.sqlite
+*.bak
+*.orig
+*.swp
+*.tmp
+
+# LocalDB database files
+*.mdf
+*.ldf
+
+# Secret config files
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# NUGET
+*.nupkg
+*.snupkg
+.nuget/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.testsettings

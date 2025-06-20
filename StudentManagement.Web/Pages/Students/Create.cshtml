@@ -1,0 +1,34 @@
+﻿@page
+@model StudentManagement.Web.Pages.Students.CreateModel
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<h2>Create Student</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Student.Name"></label>
+        <input asp-for="Student.Name" class="form-control" />
+        <span asp-validation-for="Student.Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Student.Document"></label>
+        <input asp-for="Student.Document" class="form-control" />
+        <span asp-validation-for="Student.Document" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Student.Email"></label>
+        <input asp-for="Student.Email" class="form-control" />
+        <span asp-validation-for="Student.Email" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@* @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} *@

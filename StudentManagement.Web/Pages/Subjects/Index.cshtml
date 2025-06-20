@@ -1,0 +1,33 @@
+﻿@page
+@model StudentManagement.Web.Pages.Subjects.IndexModel
+@{
+}
+
+<h2>Subjects</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Document</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var subject in Model.Subjects.Items)
+        {
+            <tr>
+                <td>@subject.Name</td>
+                <td>@subject.Code</td>
+                <td>@subject.Credits</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    Page @Model.Subjects?.PageNumber of @Model.Subjects?.TotalPages
+    <br />
+    <a asp-page="Index" asp-route-pageNumber="@(Model.PageNumber - 1)">Previous</a> |
+    <a asp-page="Index" asp-route-pageNumber="@(Model.PageNumber + 1)">Next</a>
+</div>

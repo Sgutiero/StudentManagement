@@ -1,0 +1,53 @@
+﻿@page
+@model StudentManagement.Web.Pages.Students.EnrollmentsModel
+@{
+    ViewData["Title"] = "Manage Enrollments";
+}
+
+<h2>Enroll Subjects</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Form.StudentId" />
+
+    <div class="form-group">
+        <label>Select subjects to enroll:</label>
+        <select asp-for="Form.SelectedSubjectIds" asp-items="@(new MultiSelectList(Model.Form.AvailableSubjects, "Id", "Name"))" multiple class="form-control"></select>
+        <span asp-validation-for="Form.SelectedSubjectIds" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enroll Selected</button>
+    <a asp-page="Index" class="btn btn-secondary">Back</a>
+</form>
+
+<hr />
+
+<h3>Currently Enrolled Subjects</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Credits</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var subject in Model.Form.EnrolledSubjects)
+        {
+            <tr>
+                <td>@subject.SubjectName</td>
+                <td>@subject.Credits</td>
+                <td>
+                    <form method="post" asp-page-handler="Remove">
+                        <input type="hidden" name="StudentId" value="@Model.StudentId" />
+                        <input type="hidden" name="subjectId" value="@subject.SubjectId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

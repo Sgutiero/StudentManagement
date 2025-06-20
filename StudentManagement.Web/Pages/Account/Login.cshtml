@@ -1,0 +1,29 @@
+﻿@page
+@model StudentManagement.Web.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="ReturnUrl" />
+
+    <div class="form-group">
+        <label asp-for="Login.Email"></label>
+        <input asp-for="Login.Email" class="form-control" />
+        <span asp-validation-for="Login.Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Login.Document"></label>
+        <input asp-for="Login.Document" class="form-control" />
+        <span asp-validation-for="Login.Document" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Log In</button>
+</form>
+
+@* @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} *@
