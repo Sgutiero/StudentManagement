@@ -33,5 +33,5 @@ La API está documentada con Redoc para facilitar su uso. Utiliza drf-yasg para 
 ### Configuración de Inicio del API
 
 - **Clonación del proyecto**: ejecutar desde un terminal el comando:
--  git clone https://github.com/Sgutiero/StudentManagement.git y abrir la solución del proyecto estableciendo el StudentManagement.API como proyecto de inicio.
+  git clone https://github.com/Sgutiero/StudentManagement.git y abrir la solución del proyecto estableciendo el StudentManagement.API como proyecto de inicio.
 - **Swagger**: Una vez ejecutada la API, se puede acceder a la documentación y probar los endpoints desde Swagger.
