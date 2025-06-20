@@ -33,3 +33,4 @@ Está desarrollado siguiendo los principios de arquitectura limpia, lo cual perm
 - **Clonación del proyecto**: ejecutar desde un terminal el comando:
   git clone https://github.com/Sgutiero/StudentManagement.git y abrir la solución del proyecto estableciendo el StudentManagement.API como proyecto de inicio.
 - **Swagger**: Una vez ejecutada la API, se puede acceder a la documentación y probar los endpoints desde Swagger.
+- **Usuario de prueba para la autenticación**: Email: sgutiero@gmail.com, Document: 1040757048. También se puede crear un nuevo student para realizar el proceso.
