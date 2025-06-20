@@ -6,7 +6,7 @@ Este proyecto es una solución compuesta por un backend el cual está desarrolla
 
 El objetivo principal es gestionar estudiantes y sus inscripciones a materias de forma sencilla, estructurada y escalable.
 
-Este proyecto está desarrollado siguiendo los principios de arquitectura limpia, lo cual permite una alta separación de responsabilidades, escalabilidad y facilidad de mantenimiento. Además, se emplean patrones y enfoques modernos para el desarrollo backend en .NET:
+Está desarrollado siguiendo los principios de arquitectura limpia, lo cual permite una alta separación de responsabilidades, escalabilidad y facilidad de mantenimiento. Además, se emplean patrones y enfoques modernos para el desarrollo backend en .NET:
 
 ### Funcionalidades
 
