@@ -6,9 +6,7 @@ Este proyecto es una solución compuesta por un backend el cual está desarrolla
 
 El objetivo principal es gestionar estudiantes y sus inscripciones a materias de forma sencilla, estructurada y escalable.
 
-La API proporciona endpoints para listar vulnerabilidades, registrar vulnerabilidades corregidas, consultar vulnerabilidades no corregidas, obtener una sumatoria de vulnerabilidades por severidad, eliminar vulnerabilidades y consultar vulnerabilidades por su identificador CVE.
-
-La API está documentada con Redoc para facilitar su uso. Utiliza drf-yasg para generar documentación en formato Swagger y Redoc, que proporciona una vista más interactiva de los endpoints que tiene disponibles.
+Este proyecto está desarrollado siguiendo los principios de arquitectura limpia, lo cual permite una alta separación de responsabilidades, escalabilidad y facilidad de mantenimiento. Además, se emplean patrones y enfoques modernos para el desarrollo backend en .NET:
 
 ### Funcionalidades
 
